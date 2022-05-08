@@ -134,7 +134,7 @@ h1, h2 {
 
 hr {
     border-top: 1px solid #3a3a3a;
-    witdh: 100%;
+    width: 100%;
     margin: 5px 0;
 }
 
@@ -152,7 +152,6 @@ hr {
     line-height: 20px;
     clear: both;
     margin-bottom: 50px;
-    text-align: right;
 }
 
 #welcome {
@@ -171,7 +170,7 @@ hr {
 }
 
 #circle-cover-bg {
-    background: url('../images/ethos-center-image.jpg');
+    background: url('../images/ethos-center-image.jpg') no-repeat center center;
     height: 100%;
     border-radius: 50%;
 }
@@ -179,9 +178,11 @@ hr {
 /* event times*/
 
 #times {
-    background: url('../images/dublin-city.webp') no-repeat center;
-    width: 100%;
+    background-image: url('../images/times-background.webp');
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -275,5 +276,29 @@ footer {
         margin-bottom: 20px;
         margin-left: 30px;
         line-height: 25px;
+    }
+
+    #cover-text {
+        left: 0;
+    }
+
+    #club-ethos {
+        width: 90%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    .left-about-heading, .right-about-heading {
+        width: inherit;
+    }
+
+    .left-about-heading h2, .right-about-heading h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .left-about-heading p, .right-about-heading p {
+        padding: 0 20px;
+        text-align: center;
     }
 }
